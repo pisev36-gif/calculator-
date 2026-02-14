@@ -1,0 +1,51 @@
+body {
+    background-color: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#calculator {
+    width: 320px;
+    background-color: #222;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+#display {
+    width: 100%;
+    height: 60px;
+    font-size: 28px;
+    text-align: right;
+    margin-bottom: 15px;
+    border: none;
+    outline: none;
+    padding-right: 10px;
+}
+
+#keys {
+    display: grid; /* THIS FIXES THE ROW ISSUE */
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    height: 60px;
+    font-size: 22px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #444;
+    color: white;
+}
+
+button:hover {
+    background-color: #666;
+}
+
+.operator {
+    background-color: orange;
+    color: black;
+}
